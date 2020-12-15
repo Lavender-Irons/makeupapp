@@ -36,7 +36,7 @@ public class CollectionApiController {
 		return collectionRepository.findById(id).get();
 	}
 	
-	@PostMapping(consumes = "applicatoin/json")
+	@PostMapping(consumes = "application/json")
 	@ResponseStatus(HttpStatus.CREATED)
 	public Collection create(@RequestBody @Valid Collection collection) {
 		return collectionRepository.save(collection);

@@ -25,15 +25,5 @@ public class HomeController {
 		
 		return "main/home";
 	}
-	
-	 
-	 @GetMapping("/login")
-	    public String login(Model model) {
-	        return "login";
-	    }
-
-	    @GetMapping("/user")
-	    public String userIndex() {
-	        return "user/index";
-	    }
 }
+	 
